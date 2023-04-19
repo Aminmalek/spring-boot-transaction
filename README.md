@@ -1,72 +1,56 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Simple Spring Boot 3 and Java 17 Banking Transaction Application</title>
-</head>
-<body>
-<h1>Simple Spring Boot 3 and Java 17 Banking Transaction Application</h1>
+# Simple Spring Boot 3 and Java 17 Banking Transaction Application
 
-<p>This is a simple banking transaction application built using Spring Boot 3 and Java 17. The purpose of this application is to simulate a transfer of money from one user's account to another using Spring Data JDBC.</p>
+This is a simple banking transaction application built using Spring Boot 3 and Java 17. The purpose of this application is to simulate a transfer of money from one user's account to another using Spring Data JDBC.
 
-<h2>Prerequisites</h2>
+## Prerequisites
 
-<p>To run this application, you'll need the following installed on your machine:</p>
+To run this application, you'll need the following installed on your machine:
 
-<ul>
-	<li>Java 17 or above</li>
-	<li>Maven 3 or above</li>
-</ul>
+- Java 17 or above
+- Maven 3 or above
 
-<h2>Getting Started</h2>
+## Getting Started
 
-<ol>
-	<li>Clone the repository:</li>
+1. Clone the repository:
 
-	<pre><code>git clone https://github.com/Aminmalek/spring-boot-transaction.git</code></pre>
+git clone https://github.com/Aminmalek/spring-boot-transaction.git
 
-	<li>Navigate to the project directory:</li>
 
-	<pre><code>cd spring-boot-transaction</code></pre>
+2. Navigate to the project directory:
 
-	<li>Build the application:</li>
+cd spring-boot-transaction
 
-	<pre><code>mvn clean install</code></pre>
 
-	<li>Run the application:</li>
+3. Build the application:
 
-	<pre><code>./mvnw spring-boot:run</code></pre>
-</ol>
+mvn clean install
 
-<h2>Usage</h2>
 
-<p>The application has two endpoints:</p>
+4. Run the application:
 
-<ul>
-	<li><code>/accounts</code>: This endpoint returns a list of all accounts in the system.</li>
+./mvnw spring-boot:run
 
-	<li><code>/transfer</code>: This endpoint allows a user to transfer money to another user. It accepts the following parameters:</li>
 
-	<ul>
-		<li><code>senderAccountId</code>: The ID of the user making the transfer.</li>
-		<li><code>receiverAccountId</code>: The ID of the user receiving the transfer.</li>
-		<li><code>amount</code>: The amount to be transferred.</li>
-	</ul>
-</ul>
+## Usage
 
-<h3>Sample Request:</h3>
+The application has two endpoints:
 
-<pre><code>curl -XPOST -H "content-type:application/json" \
--d '{"senderAccountId":1, "receiverAccountId":2, "amount":100}' 
+- `/accounts`: This endpoint returns a list of all accounts in the system.
 
-http://localhost:8080/transfer</code></pre>
+- `/transfer`: This endpoint allows a user to transfer money to another user. It accepts the following parameters:
 
-<h3>Sample Response:</h3>
+  - `senderAccountId`: The ID of the user making the transfer.
+  - `receiverAccountId`: The ID of the user receiving the transfer.
+  - `amount`: The amount to be transferred.
 
-<pre><code>HTTP/1.1 200 OK
-Content-Type: application/json</code></pre>
+### Sample Request
 
-<h2>Conclusion</h2>
-
-<p>This simple application demonstrates how to use Spring Boot 3 and Spring Data JDBC to implement a basic banking transaction system. It can be extended and customized as per your requirements and provides a solid foundation for building more complex applications.</p>
-</body>
-</html>
+```bash
+curl -XPOST -H "content-type:application/json" \
+-d '{"senderAccountId": 1, "receiverAccountId": 2, "amount": 100}' \
+http://localhost:8080/transfer
+Sample Response
+HTTP/1.1 200 OK
+Content-Type: application/json
+Conclusion
+This simple application demonstrates how to use Spring Boot 3 and Spring Data JDBC to implement a basic banking transaction system. It can be extended and customized as per your requirements and provides a solid foundation for building more complex applications.
