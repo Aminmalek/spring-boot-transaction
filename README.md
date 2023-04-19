@@ -1,6 +1,6 @@
 # Simple Spring Boot 3 and Java 17 Banking Transaction Application
 
-This is a simple banking transaction application built using Spring Boot 3 and Java 17. The purpose of this application is to simulate a transfer of money from one user's account to another using Spring Data JDBC.
+This is a simple banking transaction application built using Spring Boot 3 and Java 17. The purpose of this application is to simulate a transfer of money from one user's account to another using **Spring Data JDBC** and  **@Transactional** annotation.
 
 ## Prerequisites
 
@@ -13,22 +13,21 @@ To run this application, you'll need the following installed on your machine:
 
 1. Clone the repository:
 
-- `git clone https://github.com/Aminmalek/spring-boot-transaction.git
+- ``` git clone https://github.com/Aminmalek/spring-boot-transaction.git ```
 
 
 2. Navigate to the project directory:
 
-- `cd spring-boot-transaction
-
+ - ``` cd spring-boot-transaction ```
 
 3. Build the application:
 
-- `mvn clean install
+- ``` mvn clean install ```
 
 
 4. Run the application:
 
-- `./mvnw spring-boot:run
+- ``` ./mvnw spring-boot:run ```
 
 
 ## Usage
@@ -48,10 +47,14 @@ The application has two endpoints:
 ```bash
 curl -XPOST -H "content-type:application/json" \
 -d '{"senderAccountId": 1, "receiverAccountId": 2, "amount": 100}' \
-http://localhost:8080/transfer
-Sample Response
-HTTP/1.1 200 OK
-Content-Type: application/json
+http://localhost:8080/transfer 
 ```
+
+### Sample Response
+```bash
+HTTP/1.1 200 OK
+Content-Type: application/json 
+```
+
 ### Conclusion
 This simple application demonstrates how to use Spring Boot 3 and Spring Data JDBC to implement a basic banking transaction system. It can be extended and customized as per your requirements and provides a solid foundation for building more complex applications.
