@@ -13,22 +13,22 @@ To run this application, you'll need the following installed on your machine:
 
 1. Clone the repository:
 
-git clone https://github.com/Aminmalek/spring-boot-transaction.git
+- `git clone https://github.com/Aminmalek/spring-boot-transaction.git
 
 
 2. Navigate to the project directory:
 
-cd spring-boot-transaction
+- `cd spring-boot-transaction
 
 
 3. Build the application:
 
-mvn clean install
+- `mvn clean install
 
 
 4. Run the application:
 
-./mvnw spring-boot:run
+- `./mvnw spring-boot:run
 
 
 ## Usage
