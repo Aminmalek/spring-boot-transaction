@@ -55,6 +55,8 @@ http://localhost:8080/transfer
 HTTP/1.1 200 OK
 Content-Type: application/json 
 ```
+### Contributing
+If you find any issues with this application or would like to contribute to its development, please feel free to open an issue or submit a pull request.
 
-### Conclusion
+### Conclusion 
 This simple application demonstrates how to use Spring Boot 3 and Spring Data JDBC to implement a basic banking transaction system. It can be extended and customized as per your requirements and provides a solid foundation for building more complex applications.
